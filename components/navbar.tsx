@@ -34,7 +34,7 @@ export function Navbar() {
           </Button>
         </nav>
         <div className="flex items-center gap-2 md:hidden">
-          <a aria-label="Call" href="tel:+261341234567" className="text-gray-700">
+          <a aria-label="Call" href="tel:+261345709747" className="text-gray-700">
             <Phone className="h-5 w-5" />
           </a>
           <button aria-label="Menu" onClick={() => setOpen((v) => !v)} className="p-2">
