@@ -9,7 +9,7 @@ export async function sendEmail(formData: { name: string; email: string; message
     const { name, email, message } = formData;
 
     const data = await resend.emails.send({
-      from: 'Website Contact <onboarding@resend.dev>',
+      from: 'Website Contact',
       to: ['anicet22.aps2a@gmail.com'], 
       replyTo: email,
       subject: `🌍 New Tour Inquiry: ${name}`,

@@ -20,12 +20,11 @@ export function Hero() {
         <div className="max-w-2xl text-white">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs backdrop-blur">
             <Leaf className="h-3.5 w-3.5" />
-            <span>{"Authentic, private tours across Madagascar"}</span>
+            <span>{"Authentic, private travel across Madagascar"}</span>
           </div>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">Discover Madagascar with Nantenaina</h1>
           <p className="mt-4 text-lg text-white/90">
-            Licensed local guide based in Madagascar. From rainforests and lemurs to baobabs and beaches, I design
-            tailor‑made adventures just for you.
+            Car rental in Madagascar with a personal driver-guide. Explore the island unique wildlife, stunning landscapes, and rich culture on tailor-made private tours.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700">
