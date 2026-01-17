@@ -46,10 +46,13 @@ export function Footer() {
                 <a href="#about" className="hover:text-emerald-600 transition-colors">About Me</a>
               </li>
               <li>
-                <a href="#tours" className="hover:text-emerald-600 transition-colors">Popular Tours</a>
+                <a href="#tours" className="hover:text-emerald-600 transition-colors">Popular Destinations</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-emerald-600 transition-colors">Contact & Pricing</a>
+                <a href="#gallery" className="hover:text-emerald-600 transition-colors">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-emerald-600 transition-colors">Contact</a>
               </li>
             </ul>
           </div>
@@ -60,7 +63,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 text-emerald-600" />
-                <span>+261 34 57 097 7</span>
+                <span>+261 34 57 097 47</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 text-emerald-600" />

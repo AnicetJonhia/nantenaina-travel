@@ -2,16 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const testimonials = [
   {
-    name: "Ava · UK",
+    name: "Fazleev Igor · Russia",
     quote:
-      "Unforgettable! Nantenaina knew the best spots for lemurs and quiet beaches. Everything was smooth and safe.",
+      "Nantenaina was an exceptional guide throughout our Madagascar adventure. His knowledge of the local culture and wildlife enriched our experience immensely.",
   },
   {
-    name: "Kenji · Japan",
+    name: "Thomas Amgar · France",
     quote: "Great communication and thoughtful planning. We saw so much in a short time without feeling rushed.",
   },
   {
-    name: "Lucía · Spain",
+    name: "Aleksandra Kulesza · Poland",
     quote:
       "Beautiful landscapes and amazing wildlife. The Avenue of the Baobabs at sunset was magical. Highly recommended!",
   },

@@ -55,7 +55,7 @@ export function ContactSection() {
             <div className="mt-6 space-y-3 text-sm">
               <p className="flex items-center gap-2 text-gray-800">
                 <Phone className="h-4 w-4 text-emerald-600" />
-                <a href="tel:+26134570977" className="hover:underline">+261 34 57 097 7</a>
+                <a href="tel:+261345709747" className="hover:underline">+261 34 57 097 7</a>
               </p>
               <p className="flex items-center gap-2 text-gray-800">
                 <Mail className="h-4 w-4 text-emerald-600" />
