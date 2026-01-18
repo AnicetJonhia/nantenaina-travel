@@ -2,78 +2,44 @@ export const tours = [
   {
     title: "Avenue of the Baobabs — Sunset",
     location: "Morondava",
-    duration: "1 day",
-    priceFrom: "from $120",
-    image: "/images/gallery-1.png",
+    images: ["/images/gallery-1.png"],
     highlights: ["Sunset photography", "Local villages", "Iconic baobabs"],
-    itinerary: [
-      "Morning: Transfer to Baobab Avenue with scenic stops.",
-      "Afternoon: Explore nearby villages and learn about baobab ecology.",
-      "Evening: Sunset at Avenue of the Baobabs, return to Morondava.",
-    ],
+    
   },
   {
     title: "Andasibe Rainforest & Lemurs",
     location: "Andasibe-Mantadia",
-    duration: "2 days",
-    priceFrom: "from $380",
-    image: "/images/gallery-2.png",
+    images: ["/images/gallery-2.png"],
     highlights: ["Indri indri lemurs", "Rainforest trails", "Night walk"],
-    itinerary: [
-      "Day 1: Drive to Andasibe, afternoon rainforest walk, night walk for nocturnal species.",
-      "Day 2: Morning visit to Analamazaotra Reserve, optional community visit, return.",
-    ],
+    
   },
   {
     title: "Tsingy de Bemaraha Adventure",
     location: "Western Madagascar",
-    duration: "3–4 days",
-    priceFrom: "from $850",
-    image: "/images/gallery-3.png",
+  
+    images: ["/images/gallery-3.png"],
     highlights: ["Grand & Petit Tsingy", "Hanging bridges", "Baobabs"],
-    itinerary: [
-      "Day 1: Transfer north with stops, sunset by baobabs.",
-      "Day 2: Petit Tsingy hike and caves.",
-      "Day 3: Grand Tsingy circuits, return or extend one day.",
-    ],
+   
   },
   {
     title: "Nosy Be Islands — Snorkel Day",
     location: "Nosy Be",
-    duration: "1 day",
-    priceFrom: "from $160",
-    image: "/images/gallery-4.png",
+    images: ["/images/gallery-4.png"],
     highlights: ["Clear water", "Marine life", "Beach lunch"],
-    itinerary: [
-      "Morning: Boat to nearby islets, snorkeling session.",
-      "Midday: Picnic lunch on the beach.",
-      "Afternoon: Swim, relax, and return before sunset.",
-    ],
+   
   },
   {
     title: "Highlands Culture & Craft",
     location: "Antananarivo Region",
-    duration: "1–2 days",
-    priceFrom: "from $140",
-    image: "/images/gallery-6.png",
+    images: ["/images/gallery-6.png"],
     highlights: ["Craft markets", "Historic sites", "Street food tasting"],
-    itinerary: [
-      "Morning: City overview and royal hill.",
-      "Afternoon: Craft markets and workshop visit.",
-      "Optional: Food tour featuring Malagasy flavors.",
-    ],
+
   },
   {
     title: "Birding in Eastern Forests",
     location: "East Madagascar",
-    duration: "2–3 days",
-    priceFrom: "from $520",
-    image: "/images/gallery-5.png",
+    images: ["/images/gallery-5.png"],
     highlights: ["Endemic birds", "Quiet trails", "Local guides"],
-    itinerary: [
-      "Day 1: Transfer east, afternoon birding.",
-      "Day 2: Early morning birding and riverine habitats.",
-      "Day 3: Optional extension to coastal mangroves.",
-    ],
+
   },
 ]

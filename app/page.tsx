@@ -5,7 +5,7 @@ import { About } from "@/components/about"
 import { ToursSection } from "@/components/tours-section"
 import { GallerySection } from "@/components/gallery-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { FAQSection } from "@/components/faq-section"
+
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
@@ -41,7 +41,7 @@ export default function Page() {
       <ToursSection />
       <GallerySection />
       <TestimonialsSection />
-      <FAQSection />
+     
       <ContactSection />
       <Footer />
       <FloatingWhatsApp />
