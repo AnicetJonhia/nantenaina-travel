@@ -3,10 +3,15 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
+// app/layout.tsx
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  metadataBase: new URL("https://nantenaina-travel.vercel.app"),
+  title: {
+    default: "Nantenaina | Madagascar Destinations Guide",
+    template: "%s | Nantenaina Travel", 
+  },
+  description: "Licensed local guide in Madagascar",
+  
 }
 
 export default function RootLayout({

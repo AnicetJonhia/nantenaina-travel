@@ -11,10 +11,24 @@ import { Footer } from "@/components/footer"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
 
 export const metadata: Metadata = {
-  title: "Nantenaina | Madagascar Tour Guide",
+  title: "Nantenaina | Madagascar Destinations Guide",
   description:
-    "Private tours across Madagascar with a licensed local guide. Lemurs, baobabs, rainforests, beaches, and authentic Malagasy culture.",
+    "Discover Madagascar's diverse landscapes and cultures with Nantenaina.Lemurs, baobabs, rainforests, beaches, and authentic Malagasy culture.",
   keywords: [
+    "Nantenaina",
+    "Nantenaina Travel",
+    "Madagascar travel",
+    "Madagascar tours guide",
+    "Nants",
+    "Nants Travel",
+    "Trip",
+    "Trip Madagascar",
+    "Madagascar trip",
+    "Car rental in Madagascar",
+    "driver-guide",
+    "driver-guide Madagascar",
+    "Discover Madagascar",
+    "Madagascar vacation",
     "Madagascar tours",
     "Tour guide Madagascar",
     "Nantenaina",
@@ -25,9 +39,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Nantenaina | Madagascar Tour Guide",
+    title: "Nantenaina | Madagascar Destinations Guide",
     description:
-      "Private tours across Madagascar with a licensed local guide. Lemurs, baobabs, rainforests, beaches, and authentic Malagasy culture.",
+      "Discover Madagascar's diverse landscapes and cultures with Nantenaina.Lemurs, baobabs, rainforests, beaches, and authentic Malagasy culture.",
     images: [{ url: "/images/hero-madagascar.png" }],
   },
 }
