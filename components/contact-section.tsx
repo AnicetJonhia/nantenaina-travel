@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, Loader2, CheckCircle2, AlertCircle } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { sendEmail } from "@/services/actions" 
+
 
 export function ContactSection() {
   const [name, setName] = useState("")
@@ -21,26 +21,38 @@ export function ContactSection() {
     setErrorMsg(null)
     setStatus("sending")
 
-    // Validation
     if (!name || !email || !message) {
       setStatus("error")
       setErrorMsg("Please fill out all fields.")
       return
     }
 
-    // Appel de l'action serveur Resend
-    const result = await sendEmail({ name, email, message })
+    try {
+    
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      })
 
-    if (result.success) {
-      setStatus("success")
-      setName("")
-      setEmail("")
-      setMessage("")
-    } else {
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        setStatus("success")
+        setName("")
+        setEmail("")
+        setMessage("")
+      } else {
+        throw new Error(result.error || "Failed to send")
+      }
+    } catch (error) {
       setStatus("error")
       setErrorMsg("Could not send the email. Please try WhatsApp or email directly.")
     }
   }
+
 
   return (
     <section id="contact" className="bg-white">
@@ -59,7 +71,7 @@ export function ContactSection() {
               </p>
               <p className="flex items-center gap-2 text-gray-800">
                 <Mail className="h-4 w-4 text-emerald-600" />
-                <a href="mailto:nantenaina-travel@gmail.com" className="hover:underline">nantenaina.tours@gmail.com</a>
+                <a href="mailto:nantenaina-travel@gmail.com" className="hover:underline">nantenaina-travel@gmail.com</a>
               </p>
             </div>
           </div>
@@ -80,7 +92,7 @@ export function ContactSection() {
                 <Textarea rows={5} value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Tell me about your trip..." required />
               </div>
               
-              <Button type="submit" disabled={status === "sending"} className="bg-emerald-600 hover:bg-emerald-700">
+              <Button type="submit" disabled={status === "sending"} className="bg-emerald-600 hover:bg-emerald-700 cursor-pointer">
                 {status === "sending" ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
