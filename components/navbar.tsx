@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, Phone } from "lucide-react"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
+import { CONTACT_INFO } from "@/lib/config"
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -33,7 +34,7 @@ export function Navbar() {
           </Button>
         </nav>
         <div className="flex items-center gap-2 md:hidden">
-          <a aria-label="Call" href="tel:+261345709747" className="text-gray-700">
+          <a aria-label="Call" href={`tel:${CONTACT_INFO.phone}`} className="text-gray-700">
             <Phone className="h-5 w-5" />
           </a>
           <button aria-label="Menu" onClick={() => setOpen((v) => !v)} className="p-2">

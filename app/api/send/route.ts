@@ -1,6 +1,8 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
+import { CONTACT_INFO } from '@/lib/config';  
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
@@ -15,7 +17,7 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       
       from: 'Contact form <onboarding@resend.dev>', 
-      to: ['anicet22.aps2a@gmail.com'], 
+      to: CONTACT_INFO.email, 
       replyTo: email,
       subject: `🌍 New Tour Inquiry: ${name}`,
       html: `

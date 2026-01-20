@@ -1,4 +1,5 @@
 import { Leaf, Mail, Phone, Facebook, Instagram, MessageCircle } from "lucide-react"
+import { CONTACT_INFO } from "@/lib/config" 
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -27,7 +28,7 @@ export function Footer() {
               <a href="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://wa.me/26134570977" className="text-gray-400 hover:text-emerald-600 transition-colors">
+              <a href={`https://wa.me/${CONTACT_INFO.phone}`}  className="text-gray-400 hover:text-emerald-600 transition-colors">
                 <MessageCircle className="h-5 w-5" />
               </a>
             </div>
@@ -61,12 +62,12 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 text-emerald-600" />
-                <span>+261 34 57 097 47</span>
+                <span>{CONTACT_INFO.phoneLabel}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 text-emerald-600" />
                 <a href="mailto:nantenaina.tours@gmail.com" className="hover:underline">
-                  nantenaina-travel@gmail.com
+                  {CONTACT_INFO.email}
                 </a>
               </li>
               <li className="text-gray-500 italic mt-2">

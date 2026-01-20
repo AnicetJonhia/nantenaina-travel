@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, Loader2, CheckCircle2, AlertCircle } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-
+import { CONTACT_INFO } from "@/lib/config"
 
 export function ContactSection() {
   const [name, setName] = useState("")
@@ -67,11 +67,11 @@ export function ContactSection() {
             <div className="mt-6 space-y-3 text-sm">
               <p className="flex items-center gap-2 text-gray-800">
                 <Phone className="h-4 w-4 text-emerald-600" />
-                <a href="tel:+261345709747" className="hover:underline">+261 34 57 097 7</a>
+                <a href={`tel:${CONTACT_INFO.phone}`} className="hover:underline">{CONTACT_INFO.phoneLabel || CONTACT_INFO.phone}</a>
               </p>
               <p className="flex items-center gap-2 text-gray-800">
                 <Mail className="h-4 w-4 text-emerald-600" />
-                <a href="mailto:nantenaina-travel@gmail.com" className="hover:underline">nantenaina-travel@gmail.com</a>
+                <a href={`mailto:${CONTACT_INFO.email}`} className="hover:underline">{CONTACT_INFO.email}</a>
               </p>
             </div>
           </div>
